@@ -1,3 +1,7 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
 class Solution {
 public:
     // to check if s1 is the substring of s2
@@ -21,9 +25,10 @@ public:
 //    }
     string gcdOfStrings(string str1, string str2) {
         int l1 = (int)str1.length(), l2 = (int)str2.length();
-        string T = str1.substr(0,__gcd(l1,l2)); // __gcd为c++自带的求最大公约数的函数
+        string T = str1.substr(0,__gcd(l1,l2)); // __gcd为c++自带的求最大公约数的函数，在algorithm库里 
         if(isValid(T,str1) && isValid(T,str2))
             return T;
         return "";
     }
 };
+
