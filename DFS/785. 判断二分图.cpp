@@ -1,3 +1,4 @@
+//https://leetcode-cn.com/problems/is-graph-bipartite/
 class Solution {
 public:
     bool isBipartite(vector<vector<int>>& graph) {
